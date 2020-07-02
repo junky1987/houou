@@ -248,7 +248,18 @@ li {
 
 .brand {
     background-color: rgb(117, 117, 209);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 500px;
+    margin-bottom: 70px;
 }
+
+.brand-inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
 
 .brand-list {
     display: flex;
