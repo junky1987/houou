@@ -16,6 +16,7 @@ main {
 h1 {
     margin: 0;
 }
+
 p {
     margin: 0;
 }
@@ -47,7 +48,7 @@ li {
 
 .header-inner {
     position: relative;
-    max-width: 1080px;
+    max-width: 1000px;
     height: 100%;
     z-index: 2;
     margin: 0 auto;
@@ -305,41 +306,50 @@ li {
     font-size: 30px;
     text-align: center;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.icon-container {
-    width: 450px;
-    margin: 0 auto;
-}
-
-.footer-icons {
-    display: flex;
+.sns {
     text-align: center;
 }
 
-.footer-icon {
-    margin-left: 20px;
+.sns-icon {
+    margin-left: 25px;
+    display: inline-block;
 }
 
-.footer-icon img {
+.sns-icon img {
     width: 30px;
     height: auto;
     margin-right: 10px;
 }
 
-.footer-icon a {
+.sns-icon a {
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
-.footer-link {
+.nav-list {
     width: 100%;
-    height: 60px;
+    height: 45px;
     background-color: #000;
     z-index: 10;
     position: absolute;
     bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
