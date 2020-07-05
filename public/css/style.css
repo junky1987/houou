@@ -248,10 +248,11 @@ li {
 }
 
 .brand {
-    background-color: rgb(117, 117, 209);
+    background:linear-gradient(-135deg, #2CD8D5 0%, #9891ff 56%, #FFBAC3 100%);
+    background-position: center;
     width: 100%;
-    padding: 0 500%;
-    margin: 0 -500%;
+    padding: 0 200%;
+    margin: 0 -200%;
     height: 500px;
     margin-bottom: 70px;
 }
@@ -275,6 +276,18 @@ li {
     border: 1px solid rgba(228, 227, 227, 0.897);
     border-radius: 10px;
     margin-bottom: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.brand-name {
+    font-size: 19px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
 }
 
 @media screen and (max-width: 768px) {
