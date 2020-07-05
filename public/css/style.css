@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     max-width: 1080px;
+    overflow-x: hidden;
 }
 
 main {
@@ -248,8 +249,9 @@ li {
 
 .brand {
     background-color: rgb(117, 117, 209);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    padding: 0 500%;
+    margin: 0 -500%;
     height: 500px;
     margin-bottom: 70px;
 }
