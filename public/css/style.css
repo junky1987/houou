@@ -10,7 +10,7 @@ body {
 main {
     padding-top: 60px;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
 }
 
 h1 {
@@ -49,7 +49,7 @@ li {
 
 .header-inner {
     position: relative;
-    max-width: 1000px;
+    max-width: 960px;
     height: 100%;
     z-index: 2;
     margin: 0 auto;
@@ -96,8 +96,7 @@ li {
     left: 390px;
     top: 50%;
     transform: translateY(-50%);
-    border: 1px solid #999;
-    display: block;
+    border: 1px solid rgb(185, 183, 183);
     padding: 3px 5px;
     border-radius: 3px;
     height: 2.3em;
@@ -113,17 +112,18 @@ li {
     outline: none;
     width: 20px;
     height: 20px;
-    padding: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin-left: 8px;
 }
 
 .search-container input[type="text"] {
     border: none;
     height: 2.0em;
-    width: 180px;
-    margin-left: 20px;
+    width: 160px;
+    margin-left: 35px;
+    font-size: 14px;
 }
 
 .search-container input[type="text"]:focus {
@@ -151,7 +151,7 @@ li {
 }
 
 .inner {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -236,8 +236,12 @@ li {
     margin-bottom: 0;
 }
 
+.pick-up ul {
+    justify-content: space-between;
+}
+
 .pick-up li {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 10px);
 }
 
 .pick-up a {
@@ -259,8 +263,8 @@ li {
     background:linear-gradient(-135deg, #2CD8D5 0%, #9891ff 56%, #FFBAC3 100%);
     background-position: center;
     width: 100%;
-    padding: 0 200%;
-    margin: 0 -200%;
+    padding: 0;
+    margin: 0;
     height: 500px;
     margin-bottom: 70px;
 }
@@ -360,6 +364,12 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: 0;
+        padding-top: 45px;
+    }
+
     .header {
         height: 45px;
     }
@@ -368,14 +378,18 @@ li {
         display: none;
     }
 
+    .logo {
+        left: 9px;
+    }
+
     .logo img {
-        width: 80px;
+        width: 70px;
     }
 
     label {
         position: absolute;
         top: 50%;
-        right: 30px;
+        right: 15px;
         transform: translateY(-50%);
     }
     
@@ -432,9 +446,10 @@ li {
     }
     
     .search-container {
-        left: 130px;
-        height: 2em;
-        width: 150px;
+        left: 110px;
+        height: 30px;
+        width: 160px;
+        padding: 0;
     }
 
     .search-container input[type="submit"] {
@@ -443,12 +458,82 @@ li {
     }
     
     .search-container input[type="text"] {
-        height: 1.8em;
-        width: 120px;
-        margin-left: 18px;
+        width: 115px;
+        font-size: 11px;
     }
     
     .cart img {
         display: none;
+    }
+
+    .inner {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .item-list {
+        width: calc(100% / 2);
+    }
+    
+    .item-list img {
+        height: auto;
+    }
+
+    .category-title {
+        font-size: 20px;
+    }
+
+    .pick-up li {
+        width: 100%;
+    }
+    
+    .brand {
+        padding: 0;
+        margin: 0 0 70px;
+        height: 375px;
+    }
+
+    .brand-inner {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .brand-card {
+        width: calc(100% / 3 - 6px);
+        height: 60px;
+    }
+
+    .brand-name {
+        font-size: 15px;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .cam-name {
+        padding-top: 30px;
+    }
+
+    .sns-icon {
+        margin-left: 15px;
+    }
+
+    .sns-icon a {
+        font-size: 10px;
+    }
+    
+    .sns-icon img {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+    }
+        
+    .nav-item a {
+        font-size: 10px;
     }
 }
